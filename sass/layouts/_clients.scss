@@ -1,0 +1,30 @@
+/* Section Clients */
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__item {
+  flex-basis: calc((100% - 30px * 5) / 6);
+}
+
+.client__link {
+  @extend %flex-center;
+  height: 92px;
+  color: var(--icons-main-color);
+  background-color: var(--main-bg-color);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+
+  transition: color var(--transition-method);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.client__logo {
+  fill: currentColor;
+}

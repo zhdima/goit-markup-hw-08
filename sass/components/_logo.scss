@@ -1,0 +1,22 @@
+/* Logo */
+
+.logo {
+  font-family: var(--logo-font);
+  @include font-pars(700, 26px, 31px);
+}
+
+.nav__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: var(--logo-color);
+}
+
+.footer__logo {
+  color: var(--inverse-text-color);
+}
+
+.logo__accentpart {
+  color: var(--accent-color);
+}

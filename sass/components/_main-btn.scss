@@ -1,0 +1,19 @@
+/* Main button */
+
+.main-btn {
+  min-height: 50px;
+  font-family: inherit;
+  @include font-pars(700, 16px, 30px, 0.06em);
+  color: var(--inverse-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--transition-method);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

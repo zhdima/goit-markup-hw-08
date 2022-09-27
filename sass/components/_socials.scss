@@ -1,0 +1,25 @@
+.socials {
+  @extend %flex-center;  
+  gap: 10px;
+}
+
+.socials-link {
+  @extend %flex-center;  
+  width: 44px;
+  height: 44px;
+  color: var(--icons-main-color);
+  background-color: var(--main-bg-color);
+  border-radius: 50%;
+
+  transition: color var(--transition-method), background-color var(--transition-method);
+
+  &:hover,
+  &:focus {
+    color: var(--main-bg-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.socials-icon {
+  fill: currentColor;
+}

@@ -1,0 +1,8 @@
+.ourworks__title,
+.ourteam__title,
+.clients__title {
+  margin-bottom: 50px;
+  @include font-pars(700, 36px, 42px);
+  text-align: center;
+  color: var(--title-text-color);
+}

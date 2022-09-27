@@ -1,0 +1,94 @@
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--inverse-bg-color);
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+  min-width: 231px;
+}
+
+.footer-form {
+  margin-left: auto;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: inherit;
+  @include font-pars(false, 14px, 24px);
+  color: var(--footer-mail-tel-color);
+}
+
+.geoaddr {
+  color: var(--inverse-text-color);
+}
+
+.footer-contacts-list > :not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__contact-link {
+  transition: color var(--transition-method);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-socials-title,
+.signform-label {
+  margin-bottom: 20px;
+  @include font-pars(700, 14px, 16px);
+  text-transform: uppercase;
+  color: var(--inverse-text-color);
+}
+
+.footer-socials .socials-link {
+  color: var(--main-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color var(--transition-method);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.signform {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+}
+
+.signform-label {
+  display: block;
+}
+
+.signform-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  @include font-pars(false, 16px, 20px);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.signform-btn {
+  @extend %flex-center;
+  gap: 10px;
+  width: 200px;
+}

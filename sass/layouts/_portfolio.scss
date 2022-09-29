@@ -7,7 +7,24 @@
 .portfolio-filter-list {
   @extend %flex-center;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  // MOBILE
+  @media screen and (max-width: $adp-max-mobile) {
+    justify-content: flex-start;
+  }
+
+  // TABLET
+  @media screen and (min-width: $adp-min-tablet) {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-filter-btn {
@@ -37,17 +54,27 @@
 /* Portfolio list */
 
 .portfolio-list {
-  /* параметры сетки */
-  --items: 3;
   --gap: 30px;
 
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
+  // TABLET
+  @media screen and (min-width: $adp-min-tablet) {
+    --items: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+  }
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    --items: 3;
+  }
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+  // TABLET
+  @media screen and (min-width: $adp-min-tablet) {
+    flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+  }
 }
 
 .portfolio-link {

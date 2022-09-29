@@ -1,5 +1,15 @@
 /* Section Ourworks */
 
+.ourworks {
+  padding-top: 0;
+
+  display: none;
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    display: block;
+  }
+}
+
 .ourworks__list {
   @extend %flex-center;
   gap: 30px;

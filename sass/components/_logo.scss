@@ -2,7 +2,12 @@
 
 .logo {
   font-family: var(--logo-font);
-  @include font-pars(700, 26px, 31px);
+  @include font-pars(700, 24px, 28px);
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    @include font-pars(700, 26px, 31px);
+  }
 }
 
 .nav__logo {

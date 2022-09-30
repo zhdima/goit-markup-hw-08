@@ -3,9 +3,14 @@
 .regform-title {
   display: block;
   margin-bottom: 12px;
-  @include font-pars(700, 20px, 23px);
   text-align: center;
   color: var(--title-text-color);
+  @include font-pars(700, 20px, 30px);
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    @include font-pars(700, 20px, 23px);
+  }
 }
 
 .regform-group {
@@ -97,7 +102,11 @@
 
 .regform-check-label {
   user-select: none;
-  @include font-pars(false, 14px, 24px);
+  @include font-pars(false, 12px, 14px);
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    @include font-pars(false, 14px, 24px);
+  }
 }
 
 .regform-check-link {

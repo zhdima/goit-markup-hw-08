@@ -9,7 +9,7 @@
   }
   @if $lh {
     @if $size {
-      line-height: decimal-round($lh / $size, 2);
+      line-height: decimal-round(calc($lh / $size), 2);
     } @else {
       line-height: $lh;
     }

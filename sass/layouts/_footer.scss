@@ -4,20 +4,56 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--inverse-bg-color);
+  min-width: $adp-min-responsive;
 }
 
 .footer > .container {
-  display: flex;
-  align-items: baseline;
+  // MOBILE + TABLET
+  @media screen and (max-width: $adp-max-tablet) {
+    text-align: center;
+  }
+
+  // TABLET +
+  @media screen and (min-width: $adp-min-tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  // ONLY TABLET
+  @media screen and (min-width: $adp-min-tablet) and (max-width: $adp-max-tablet) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-contacts {
-  margin-right: 70px;
-  min-width: 231px;
+  // MOBILE
+  @media screen and (max-width: $adp-max-mobile) {
+    margin-bottom: 60px;
+  }
+
+  // TABLET
+  @media screen and (min-width: $adp-min-tablet) {
+    margin-right: 165px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    margin-right: 70px;
+    min-width: 231px;
+  }
 }
 
 .footer-form {
-  margin-left: auto;
+  // MOBILE + TABLET
+  @media screen and (max-width: $adp-max-tablet) {
+    margin-top: 60px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    margin-left: auto;
+  }
 }
 
 .address {
@@ -32,7 +68,11 @@
 }
 
 .footer-contacts-list > :not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__contact-link {
@@ -65,10 +105,18 @@
 }
 
 .signform {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 12px;
+  // ONLY TABLET
+  @media screen and (min-width: $adp-min-tablet) and (max-width: $adp-max-tablet) {
+    width: 450px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 12px;
+  }
 }
 
 .signform-label {
@@ -76,7 +124,6 @@
 }
 
 .signform-input {
-  width: 358px;
   height: 50px;
   padding: 15px 16px;
   @include font-pars(false, 16px, 20px);
@@ -85,10 +132,27 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+
+  width: 100%;
+
+  // MOBILE + TABLET
+  @media screen and (max-width: $adp-max-tablet) {
+    margin-bottom: 20px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    width: 358px;
+  }
 }
 
 .signform-btn {
   @extend %flex-center;
   gap: 10px;
   width: 200px;
+
+  // MOBILE + TABLET
+  @media screen and (max-width: $adp-max-tablet) {
+    margin: 0 auto;
+  }
 }

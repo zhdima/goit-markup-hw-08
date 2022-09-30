@@ -382,6 +382,10 @@ body {
   margin-bottom: auto;
 }
 
+.menu-burger__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .menu-burger__nav-link {
   font-weight: 500;
   font-size: 40px;
@@ -391,11 +395,35 @@ body {
   -webkit-transition: color var(--transition-method);
   transition: color var(--transition-method);
 }
-.menu-burger__nav-link:not(:last-child) {
-  margin-bottom: 32px;
-}
 .menu-burger__nav-link--current, .menu-burger__nav-link:hover, .menu-burger__nav-link:focus {
   color: var(--accent-color);
+}
+
+.menu-burger__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-burger__link-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+@media screen and (max-width: 376px) {
+  .menu-burger__link-phone {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+}
+
+.menu-burger__link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 }
 
 .menu-burger__socials-list {
@@ -403,6 +431,35 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 64px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+@media screen and (max-width: 440px) {
+  .menu-burger__socials-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (max-width: 376px) {
+  .menu-burger__socials-list {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+}
+
+.menu-burger__socials-item:not(:first-child) {
+  padding-left: 10px;
+}
+.menu-burger__socials-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 /* Header */
@@ -461,9 +518,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     gap: 50px;
   }
 }
@@ -1299,9 +1353,11 @@ body {
   }
 }
 
+/*
 *,
 *::after,
 *::before {
   outline: 1px solid red;
   outline-offset: -1px;
-}/*# sourceMappingURL=main.css.map */
+} 
+*//*# sourceMappingURL=main.css.map */

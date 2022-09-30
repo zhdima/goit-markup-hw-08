@@ -33,17 +33,17 @@
             <span class="logo__accentpart">Web</span>Studio</a
           >
           <ul class="nav__list plist">
-            <li><a class="nav__link plink" href="./index.html">Студія</a></li>
-            <li
+            <li class="nav__item"><a class="nav__link plink" href="./index.html">Студія</a></li>
+            <li class="nav__item"
               ><a class="nav__link plink nav__link--current" href="./portfolio.html"
                 >Портфоліо</a
               ></li
             >
-            <li><a class="nav__link plink" href="">Контакти</a></li>
+            <li class="nav__item"><a class="nav__link plink" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="header__contacts-list plist">
-          <li lang="en"
+          <li class="header__contacts-item" lang="en"
             ><a class="header__contact-link plink" href="mailto:info@devstudio.com">
               <svg class="header__contact-icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
@@ -51,8 +51,8 @@
               info@devstudio.com</a
             ></li
           >
-          <li
-            ><a class="header__contact-link plink" href="tel:+380961111111">
+          <li class="header__contacts-item">
+            <a class="header__contact-link plink" href="tel:+380961111111">
               <svg class="header__contact-icon" width="10" height="16">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
@@ -60,8 +60,71 @@
             ></li
           >
         </ul>
+        <button
+          class="menu-burger-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-burger"
+        >
+          <svg class="menu-burger-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu-burger-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- Menu Burger -->
+    <div class="menu-burger js-menu-container" id="menu-burger">
+      <button
+        class="menu-burger-btn menu-burger-btn--close js-close-menu"
+        type="button"
+        aria-expanded="true"
+        aria-controls="menu-burger"
+      >
+        <svg class="menu-burger-btn__icon" width="40" height="40">
+          <use href="./images/icons.svg#menu-burger-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-burger__nav-list plist">
+        <li class="menu-burger__nav-item">
+          <a class="menu-burger__nav-link plink" href="./index.html">Студія</a>
+        </li>
+        <li class="menu-burger__nav-item">
+          <a
+            class="menu-burger__nav-link plink menu-burger__nav-link--current"
+            href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="menu-burger__nav-item">
+          <a class="menu-burger__nav-link plink" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu-burger__contacts-list plist">
+        <li class="menu-burger__contacts-item">
+          <a class="menu-burger__link-phone plink" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+        <li class="menu-burger__contacts-item" lang="en">
+          <a class="menu-burger__link-mail plink" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu-burger__socials-list plist">
+        <li class="menu-burger__socials-item" lang="en"
+          ><a class="menu-burger__socials-link plink" href="">Instagram</a></li
+        >
+        <li class="menu-burger__socials-item" lang="en"
+          ><a class="menu-burger__socials-link plink" href="">Twitter</a></li
+        >
+        <li class="menu-burger__socials-item" lang="en"
+          ><a class="menu-burger__socials-link plink" href="">Facebook</a></li
+        >
+        <li class="menu-burger__socials-item" lang="en"
+          ><a class="menu-burger__socials-link plink" href="">LinkedIn</a></li
+        >
+      </ul>
+    </div>
 
     <!-- Main content -->
     <main>
@@ -422,5 +485,13 @@
         </div>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

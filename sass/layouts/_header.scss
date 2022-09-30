@@ -6,22 +6,65 @@
 
 .header__container {
   display: flex;
+  align-items: center;
+
+  height: 80px;
+
+  // MOBILE
+  @media screen and (max-width: $adp-max-mobile) {
+    height: 60px;
+  }
 }
 
 .header__contacts-list {
-  @extend %flex-center;
-  gap: 50px;
   margin-left: auto;
+  height: 100%;
+
+  // MOBILE
+  @media screen and (max-width: $adp-max-mobile) {
+    display: none;
+  }
+
+  // TABLET
+  @media screen and (min-width: $adp-min-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+.header__contacts-item {
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    @include font-pars(500, 14px, 16px, 0.02em);
+    height: 100%;
+  }
 }
 
 .header__contact-link {
   @extend %flex-center;
   gap: 10px;
+  height: 100%;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // TABLET
+  @media screen and (min-width: $adp-min-tablet) {
+    @include font-pars(500, 12px, 14px, 0.02em);
+  }
 
-  @include font-pars(500, 14px, 16px, 0.02em);
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    @include font-pars(500, 14px, 16px, 0.02em);
+  }
 
   color: var(--main-text-color);
 

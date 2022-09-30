@@ -3,18 +3,27 @@
 .nav,
 .nav__list {
   @extend %flex-center;
+  height: 100%;
 }
 
 .nav__list {
   gap: 50px;
+
+  // MOBILE
+  @media screen and (max-width: $adp-max-mobile) {
+    display: none;
+  }
+}
+
+.nav__item {
+  height: 100%;
 }
 
 .nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
+  height: 100%;
 
   @include font-pars(500, 14px, 16px, 0.02em);
 

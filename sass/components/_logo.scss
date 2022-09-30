@@ -11,11 +11,20 @@
 }
 
 .nav__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
+  height: 100%;
+  display: flex;
+  align-items: center;
   color: var(--logo-color);
+
+  // TABLET
+  @media screen and (min-width: $adp-min-tablet) {
+    margin-right: 87px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: $adp-min-desktop) {
+    margin-right: 92px;
+  }
 }
 
 .footer__logo {

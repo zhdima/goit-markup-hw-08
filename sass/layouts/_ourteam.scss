@@ -19,6 +19,13 @@
 }
 
 .ourteam-item {
+  // MOBILE
+  @media screen and (max-width: $adp-max-mobile) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   // TABLET
   @media screen and (min-width: $adp-min-tablet) {
     flex-basis: calc((100% - 30px * 1) / 2);

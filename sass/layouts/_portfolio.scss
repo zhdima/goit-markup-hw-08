@@ -79,14 +79,24 @@
 }
 
 .portfolio-item {
+  // MOBILE
+  @media screen and (max-width: $adp-max-mobile) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   // TABLET
   @media screen and (min-width: $adp-min-tablet) {
     flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+    display: flex;
   }
 }
 
 .portfolio-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
   transition: box-shadow var(--transition-method);
 
   &:hover,
@@ -124,6 +134,7 @@
 }
 
 .portfolio-item-container {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;

@@ -14,11 +14,13 @@
 
   height: 400px;
   padding-top: 118px;
+  padding-bottom: 118px;
 
   // DESKTOP
   @media screen and (min-width: $adp-min-desktop) {
     height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   // Background Image HERO

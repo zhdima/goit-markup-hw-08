@@ -125,15 +125,15 @@
 
 .signform-input {
   height: 50px;
+  width: 100%;
   padding: 15px 16px;
+  outline: none;
   @include font-pars(false, 16px, 20px);
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-
-  width: 100%;
 
   // MOBILE + TABLET
   @media screen and (max-width: $adp-max-tablet) {

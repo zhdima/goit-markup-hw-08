@@ -7,13 +7,12 @@
 .portfolio-filter-list {
   @extend %flex-center;
   gap: 8px;
-  margin-bottom: 33px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
 
   // MOBILE
   @media screen and (max-width: $adp-max-mobile) {
     justify-content: flex-start;
-    max-width: 330px;
   }
 
   // TABLET
@@ -25,13 +24,6 @@
   // DESKTOP
   @media screen and (min-width: $adp-min-desktop) {
     margin-bottom: 50px;
-  }
-}
-
-.portfolio-filter-item {
-  // MOBILE
-  @media screen and (max-width: $adp-max-mobile) {
-    margin-bottom: 7px;
   }
 }
 

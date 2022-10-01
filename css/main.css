@@ -631,6 +631,7 @@ body {
   text-align: center;
   height: 400px;
   padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -641,6 +642,7 @@ body {
   .hero__overlay {
     height: 600px;
     padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -928,7 +930,7 @@ body {
 /* Filter buttons */
 .portfolio-filter-list {
   gap: 8px;
-  margin-bottom: 33px;
+  margin-bottom: 40px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -937,7 +939,6 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    max-width: 330px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -950,12 +951,6 @@ body {
 @media screen and (min-width: 1200px) {
   .portfolio-filter-list {
     margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 767.9px) {
-  .portfolio-filter-item {
-    margin-bottom: 7px;
   }
 }
 
@@ -1381,7 +1376,9 @@ body {
 
 .signform-input {
   height: 50px;
+  width: 100%;
   padding: 15px 16px;
+  outline: none;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -1390,7 +1387,6 @@ body {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  width: 100%;
 }
 @media screen and (max-width: 1199.9px) {
   .signform-input {

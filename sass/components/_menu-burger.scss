@@ -87,7 +87,13 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
+
 .menu-burger__link-phone {
   @include font-pars(500, 34px, 40px, 0.02em);
   color: var(--accent-color);

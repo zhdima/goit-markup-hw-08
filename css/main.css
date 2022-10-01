@@ -402,6 +402,9 @@ body {
 .menu-burger__contacts-item:not(:last-child) {
   margin-bottom: 32px;
 }
+.menu-burger__contacts-item:hover, .menu-burger__contacts-item:focus {
+  color: var(--accent-color);
+}
 
 .menu-burger__link-phone {
   font-weight: 500;
